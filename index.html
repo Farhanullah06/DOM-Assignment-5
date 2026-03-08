@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Assignment #5 - Event Listeners</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-layer"></div>
+    
+    <div class="container">
+        <header class="header">
+            <div class="badge">DOM Manipulation</div>
+            <h1>Event Listeners</h1>
+            <p class="subtitle">Interactive JavaScript exercises demonstrating user interaction handling</p>
+        </header>
+
+        <main class="tasks-grid">
+            <!-- Task 1: Button Click Event -->
+            <section class="task-card" id="task1">
+                <div class="task-header">
+                    <span class="task-number">01</span>
+                    <h2>Button Click Event</h2>
+                </div>
+                <p class="task-description">Click the button to trigger an alert message.</p>
+                <button id="clickBtn" class="btn btn-primary">Click Me</button>
+            </section>
+
+            <!-- Task 2: Change Text on Click -->
+            <section class="task-card" id="task2">
+                <div class="task-header">
+                    <span class="task-number">02</span>
+                    <h2>Change Text on Click</h2>
+                </div>
+                <p class="task-description">Update paragraph content with a button click.</p>
+                <p id="textParagraph" class="demo-text">Original text - waiting to be changed...</p>
+                <button id="changeTextBtn" class="btn btn-secondary">Change Text</button>
+            </section>
+
+            <!-- Task 3: Background Color Change -->
+            <section class="task-card" id="task3">
+                <div class="task-header">
+                    <span class="task-number">03</span>
+                    <h2>Background Color Change</h2>
+                </div>
+                <p class="task-description">Transform the page background with a single click.</p>
+                <button id="bgColorBtn" class="btn btn-accent">Change Background</button>
+            </section>
+
+            <!-- Task 4: Input Event -->
+            <section class="task-card" id="task4">
+                <div class="task-header">
+                    <span class="task-number">04</span>
+                    <h2>Input Event (Live Typing)</h2>
+                </div>
+                <p class="task-description">Watch your text appear in real-time as you type.</p>
+                <input type="text" id="liveInput" class="input-field" placeholder="Start typing here...">
+                <p id="liveOutput" class="demo-text live-output">Your text will appear here...</p>
+            </section>
+
+            <!-- Task 5: Mouse Events -->
+            <section class="task-card" id="task5">
+                <div class="task-header">
+                    <span class="task-number">05</span>
+                    <h2>Mouse Events</h2>
+                </div>
+                <p class="task-description">Hover over the box to see color transitions.</p>
+                <div id="hoverBox" class="hover-box">
+                    <span>Hover Me</span>
+                </div>
+            </section>
+
+            <!-- Task 6: Double Click Event -->
+            <section class="task-card" id="task6">
+                <div class="task-header">
+                    <span class="task-number">06</span>
+                    <h2>Double Click Event</h2>
+                </div>
+                <p class="task-description">Double-click to trigger a special alert.</p>
+                <button id="dblClickBtn" class="btn btn-outline">Double Click Me</button>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>DOM Assignment #5 - Event Listeners</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
